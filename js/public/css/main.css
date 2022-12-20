@@ -1,0 +1,400 @@
+:root {
+    --primary-color: #ADA2FF;
+}
+
+/* Header */
+.header-left .nameA,
+.nameB,
+.nameC,
+.nameD {
+    border-radius: 50%;
+    width: 30px;
+    margin-top: 10px;
+}
+
+.header-left>button:hover,
+.header-right>button:hover,
+.ti-trash:hover,
+.ti-receipt:hover,
+.ti-plus:hover {
+    background-color: red;
+    color: #fff;
+}
+
+.ti-plus,
+.ti-minus {
+    height: 30px;
+}
+
+.ti-search {
+    height: 30px;
+}
+
+.search {
+    height: 30px;
+}
+
+.ti-close {
+    margin: 0;
+    font-size: 14px;
+    color: blue;
+    margin: 15px 0 0 0;
+}
+
+.header-right .btnheader {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    margin-right: 3px;
+    float: right;
+
+}
+
+.header-right .btnheader i {
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    background-color: var(--primary-color);
+    height: 48px;
+}
+
+/* content */
+.formheader ul li {
+    display: inline-block;
+    margin: 0 30px;
+}
+
+.btn {
+    width: 100%;
+    background-color: var(--primary-color);
+    height: 36px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.btn:hover {
+    background-color: red;
+    color: #fff;
+}
+
+.product-img {
+    width: 100%;
+    height: 120px;
+    border-radius: 10px;
+}
+
+.product-item {
+    position: relative;
+    margin-top: 10px;
+}
+
+.product-info {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-name {
+    background-color: rgba(0, 125, 110, 0.4);
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.product-price {
+    background-color: rgba(0, 125, 110, 0.5);
+    color: #fff;
+    text-align: right;
+    border-radius: 10px;
+
+}
+
+.product-price-wrap {
+    text-align: right;
+}
+
+.product-item:hover .product-img {
+    transform: scale(1.1);
+    transform: 0.2s linear;
+}
+
+.product-item:hover {
+    cursor: pointer;
+}
+
+
+
+.formheader {
+    height: 30px;
+}
+
+.soluong {
+    float: left;
+    height: 20px;
+    font-size: 10px;
+    color: #fff;
+    background-color: gray;
+    margin-top: 5px;
+}
+
+.notelist {
+    background-color: #f7da9c;
+}
+
+.formbody {
+    height: 300px;
+    /* background-color: #a0f1fa; */
+    border-bottom: 2px dotted #9c9c9c;
+    padding: 0;
+    overflow: auto;
+}
+
+
+.input-info-left {
+    width: 40%;
+    float: left;
+    border: none;
+    margin-top: 10px;
+}
+
+.Client {
+    width: 78%;
+    margin-top: 5px;
+    float: left;
+}
+
+
+
+
+
+.datetime {
+    width: 100%;
+    margin: 5px 0;
+}
+
+.info-item {
+    margin-bottom: 15px;
+}
+
+.grandopening {
+    width: 60%;
+    height: 35px;
+    float: left;
+}
+
+.money {
+    width: 40%;
+    height: 35px;
+    float: right;
+}
+
+.donhang {
+    width: 100%;
+    margin-bottom: 5px;
+    height: 35px;
+}
+
+.note {
+    width: 100%;
+}
+
+/* PAY RIGHT */
+.input-info {
+    background-color: #b1c3d5;
+    height: 50%;
+}
+
+.input-info-right {
+    float: right;
+    width: 40%;
+    border: none;
+    margin-top: 10px;
+}
+
+.total-money,
+.discount,
+.tax,
+.sum-total,
+.money-user,
+.money-superfluous {
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.info-name,
+.tax-left {
+    float: left;
+}
+
+.total,
+.sumtotal,
+.ti-credit-card,
+.tax-right,
+.ti-files {
+    float: right;
+}
+
+.ti-credit-card,
+.ti-files {
+    margin: 0 15px 0 0;
+}
+
+.tax button,
+.money-superfluous button {
+    border-radius: 5px;
+    color: #fff;
+    background-color: #2f73e0;
+    border: none;
+}
+
+.total-money>.total {
+    color: rgb(13, 170, 8);
+}
+
+.discount>.total {
+    background-color: #dcdcdcb9;
+    border: none;
+}
+
+.sum-total .total {
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: red;
+    color: #fff;
+}
+
+.input-info-bottom {
+    float: left;
+    width: 100%;
+}
+
+.info-bottom-left,
+.info-bottom-right,
+.info-bottom-Between {
+    float: left;
+    width: 32.8%;
+    height: 100px;
+    position: relative;
+}
+
+.info-bottom-left {
+    margin-right: 10px;
+}
+
+.info-bottom-left .up,
+.down,
+.info-bottom-Between .up,
+.down {
+    width: 100%;
+    height: 48%;
+    border-radius: 5px;
+    border: none;
+    margin-top: 5px;
+    background-color: #2f73e0;
+}
+
+.info-bottom-Between .down {
+    background-color: #f7c53b;
+}
+
+.input-info-bottom .up:hover,
+.down:hover {
+    background-color: red;
+    color: #fff;
+}
+
+.info-bottom-right .up {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    margin-top: 5px;
+    border: none;
+    margin-left: 5px;
+    background-color: rgb(222, 76, 76);
+    color: #fff;
+}
+
+.active {
+    background-color: #2f73e0;
+}
+
+.order {
+    font-size: medium;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: antiquewhite;
+    text-align: center;
+}
+/* Thong bao Popup  */
+.tbpopup .tboverlay {
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100vw;
+    height:100vh;
+    background:rgba(0,0,0,0.7);
+    z-index:1;
+    display:none;
+    }
+     
+    .tbpopup .tbcontent {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%) scale(0);
+    background:#fff;
+    max-width:500px;
+    z-index:2;
+    text-align:center;
+    padding:20px;
+    box-sizing:border-box;
+    font-family:"Open Sans",sans-serif;
+    border-radius:20px;
+    display: block;
+    position: fixed;
+    box-shadow:0px 0px 10px #111;
+    }
+    @media (max-width: 700px) {
+    .tbpopup .tbcontent {width:90%;}
+    }
+     
+    .tbpopup .tbclose-btn {
+    cursor:pointer;
+    position:absolute;
+    right:20px;
+    top:20px;
+    width:35px;
+    height:35px;
+    color:#ff4444;
+    font-size:30px;
+    font-weight:600;
+    line-height:35px;
+    text-align:center;
+    border-radius:50%;
+    }
+     
+    .tbpopup.active .tboverlay {
+    display:block;
+    }
+     
+    .tbpopup.active .tbcontent {
+    transition:all 300ms ease-in-out;
+    transform:translate(-50%,-50%) scale(1);
+    }
+    .tbbuttom{background:#00cc00;color:#fff}

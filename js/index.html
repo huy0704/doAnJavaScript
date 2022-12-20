@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Menu Shop Tui~~</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" type="image/png" href="../favicon.ico" />
+
+    <link rel="stylesheet" href="public/css/main.css">
+    <link rel="stylesheet" href="public/img/themify-icons/themify-icons.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="public/js/main.js"></script>
+    <script src="public/js/order_detail.js"></script>
+    <script src="public/js/button.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- SweetAlert2 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.2.0/sweetalert2.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.2.0/sweetalert2.all.min.js"></script>
+</head>
+
+<body onload="thongbaopopup()">
+    <!-- Thong bao pupup -->
+<div class="tbpopup" id="tbpopup-1">
+    <div class="tboverlay"></div>
+    <div class="tbcontent">
+    <div class="tbclose-btn" onclick="thongbaopopup()">&times;</div>
+    <div style="font-size:30px;font-weight:bold">Xin chào</div>
+    <p>Bạn cần phải đăng nhập trước khi vào trang</p>
+    <button><a href="login.html" style="border-radius: 50%;">Login</a></button>
+    </div>
+    </div>
+    <div id="wrapper">
+        <header class="header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="header-left">
+                            <button class="ti-search"></button>
+                            <input type="search">
+                            <button>Phòng Vip 1</button>
+                            <button class="nameA">A</button>
+                            <button class="nameB">B</button>
+                            <button class="nameC">C</button>
+                            <button class="nameD">D</button>
+                            <button class="nameD"><i class="ti-pencil-alt"></i></button>
+                            <button><a href="login.html" style="text-decoration: none;color: black;">Login</a></button>
+                            <button><a href="register.html"
+                                    style="text-decoration: none;color: black;">Register</a></button>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="header-right">
+                            <button class="btnheader"><i class="ti-power-off"></i></button>
+                            <button class="btnheader"><i class="ti-menu-alt"></i></button>
+                            <button class="btnheader"><i class="ti-cloud"></i></button>
+                            <button class="btnheader"><i class="ti-fullscreen"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="content container-fluid">
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="form">
+                        <form action="" method="#">
+                            <div class="formheader">
+                                <button class="soluong">Số Lượng Khách Ngồi<i class="ti-user"></i></button>
+                            </div>
+                            <div class="formbody">
+                                <table>
+                                    <tr>
+                                        <th style="width: 50px;">#</th>
+                                        <th style="width: 200px;">Tên Hàng Hóa</th>
+                                        <th style="width: 100px;">DVT</th>
+                                        <th style="width: 400px;">SL</th>
+                                        <th style="width: 200px;">Đơn Giá</th>
+                                        <th style="width: 250px;">Thành Tiền</th>
+                                        <th style="width: 100px;">Xóa</th>
+                                    </tr>
+                                    <tbody id="order">
+                                    </tbody>
+                                </table>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+                <div class="col-md-5">
+                    <div class="content-right">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-6 mt-3">
+                                    <button id="btn-food" class="btn active">Đồ Ăn</button>
+                                </div>
+                                <div class="col-md-6 mt-3">
+                                    <button id="btn-drink" class="btn">Đồ Uống</button>
+                                </div>
+                            </div>
+                            <div class="row" id="product_list">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="input-info">
+                <div class="input-info-left">
+                    <form action="" method="#">
+                        <input type="text" class="Client" placeholder="Tìm Khách Hàng">
+                        <button class="ti-receipt"></button>
+                        <button class="ti-plus"></button> <br>
+                        <p class="ti-close"> Khách lẻ</p>
+                        <input type="datetime-local" class="datetime" name="" id="">
+                        <div class="info-item">
+                            <select name="Khai Trương" id="" class="grandopening">
+                                <option value="Khai Trương">Khai Trương</option>
+                            </select>
+                            <select name="Khai Trương" id="" class="money">
+                                <option value="Khai Trương">Tiền Mặt</option>
+                            </select> <br>
+                        </div>
+                        <input type="text" value="Tự Động Tạo Mã(Đơn Hàng)" class="donhang">
+                        <textarea class="note" placeholder="Ghi chú"></textarea>
+                    </form>
+                </div>
+                <div class="input-info-right">
+                    <div class="total-money">
+                        <p>Tổng thành tiền </p>
+                    </div>
+                    <div class="discount">
+                        <p class="info-name">Chiết khấu</p>
+                        <input type="text" value="0" class="total">
+                    </div>
+                    <div class="tax">
+                        <div class="tax-left">
+                            <b>VAT</b>
+                            <button><b>0</b></button>
+                            <button style="background-color: #7123b0;"><b>1%</b></button>
+                            <button><b>?</b></button>
+                        </div>
+                        <div class="tax-right">
+                            <button><b>0</b></button>
+                        </div>
+                    </div>
+                    <div class="sum-total">
+                        <b class="info-name">Tổng cộng</b>
+                        <button class="total" id=""><b> </b></button>
+                    </div>
+                    <div class="money-user">
+                        <p class="info-name">Tiền khách trả</p>
+                        <input type="text" class="total" style="width: 120px;">
+                        <i class="ti-credit-card" style="color: red;"></i>
+                        <i class="ti-files" style="color: blue;"></i>
+                    </div>
+                    <div class="money-superfluous">
+                        <p class="info-name">Tiền thừa</p>
+                        <button class="total"><b>0</b></button>
+                    </div>
+                </div>
+                <div class="input-info-bottom">
+                    <div class="info-bottom-left">
+                        <button class="up"><i class="ti-reload"></i> Chuyển Bàn</button>
+                        <button class="down"><i class="ti-cut"></i> Tách Bàn</button>
+                    </div>
+                    <div class="info-bottom-Between">
+                        <button class="up"><i class="ti-printer"></i> Báo chế biến [F9]</button>
+                        <button class="down"> <i class="ti-printer"></i> Tạm tính [F3]</button>
+                    </div>
+                    <div class="info-bottom-right">
+                        <button class="up" id="success">Thanh Toán <br> <i class="ti-shopping-cart"></i> [F4]</button>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
